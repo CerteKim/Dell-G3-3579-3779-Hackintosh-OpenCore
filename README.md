@@ -11,10 +11,10 @@ My OpenCore EFI folder backup
 
 # Still Experimental !
 ## Working
-10.13.6 Boot
-iGPU
-Backlight
-Audio
+10.13.6 Boot  
+iGPU  
+Backlight  
+Audio  
 Keyboard
 
 ## Issue
