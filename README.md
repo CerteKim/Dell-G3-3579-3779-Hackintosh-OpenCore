@@ -18,16 +18,16 @@ Audio
 Keyboard
 
 ## Issue
-Trackpad is recognize as mouse
+Trackpad is recognize as mouse  
 Can't recognize CPU model
 
 ## Not working
-dGPU (Disabled by SSDT)
-Wlan (Do not have driver)
+dGPU (Disabled by SSDT)  
+Wlan (Do not have driver)  
 Bluetooth
 
 ## Unknown
-Webcam
-Realtek Card reader
-USB type-c to HDMI adapter
+Webcam  
+Realtek Card reader  
+USB type-c to HDMI adapter  
 Thunderbolt
