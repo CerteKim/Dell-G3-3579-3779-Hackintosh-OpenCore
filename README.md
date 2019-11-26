@@ -29,7 +29,7 @@ USB to HDMI adapter
 Thunderbolt (using SSDT & IOElectrify.kext, but I can't verify because I don't have TB3 devices)
 
 ## Issue
-Can't recognize CPU model (Testing with added kext)  
+Can't recognize CPU model  
 No SerialNumber  
 
 ## Not working
