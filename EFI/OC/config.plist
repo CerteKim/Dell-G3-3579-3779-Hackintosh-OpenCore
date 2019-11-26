@@ -383,6 +383,20 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>VoodooPS2Trackpad</string>
+				<key>MatchKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoodooPS2Mouse</string>
+				<key>BundlePath</key>
+				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>NoTouchID</string>
 				<key>MatchKernel</key>
 				<string></string>
@@ -410,117 +424,117 @@
 				<string>RealtekRTL8111.kext</string>
 			</dict>
 			<dict>
-                                <key>Comment</key>
-                                <string>BluetoothFixup</string>
-                                <key>MatchKernel</key>
-                                <string></string>
-                                <key>PlistPath</key>
-                                <string>Contents/Info.plist</string>
-                                <key>Enabled</key>
-                                <true/>
-                                <key>ExecutablePath</key>
-                                <string>Contents/MacOS/BT4LEContinuityFixup</string>
-                                <key>BundlePath</key>
-                                <string>BT4LEContinuityFixup.kext</string>
-                        </dict>
+				<key>Comment</key>
+				<string>BluetoothFixup</string>
+				<key>MatchKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BT4LEContinuityFixup</string>
+				<key>BundlePath</key>
+				<string>BT4LEContinuityFixup.kext</string>
+			</dict>
 			<dict>
-                                <key>Comment</key>
-                                <string>CPUfriend</string>
-                                <key>MatchKernel</key>
-                                <string></string>
-                                <key>PlistPath</key>
-                                <string>Contents/Info.plist</string>
-                                <key>Enabled</key>
-                                <true/>
-                                <key>ExecutablePath</key>
-                                <string>Contents/MacOS/CPUFriend</string>
-                                <key>BundlePath</key>
-                                <string>CPUFriend.kext</string>
-                        </dict>
+				<key>Comment</key>
+				<string>CPUFriend</string>
+				<key>MatchKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/CPUFriend</string>
+				<key>BundlePath</key>
+				<string>CPUFriend.kext</string>
+			</dict>
 			<dict>
-                                <key>Comment</key>
-                                <string>TB3 Power</string>
-                                <key>MatchKernel</key>
-                                <string></string>
-                                <key>PlistPath</key>
-                                <string>Contents/Info.plist</string>
-                                <key>Enabled</key>
-                                <true/>
-                                <key>ExecutablePath</key>
-                                <string>Contents/MacOS/IOElectrify</string>
-                                <key>BundlePath</key>
-                                <string>IOElectify.kext</string>
-                        </dict>
+				<key>Comment</key>
+				<string>TB3 Power</string>
+				<key>MatchKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/IOElectrify</string>
+				<key>BundlePath</key>
+				<string>IOElectify.kext</string>
+			</dict>
 			<dict>
-                                <key>Comment</key>
-                                <string>USB XHCI</string>
-                                <key>MatchKernel</key>
-                                <string></string>
-                                <key>PlistPath</key>
-                                <string>Contents/Info.plist</string>
-                                <key>Enabled</key>
-                                <true/>
-                                <key>ExecutablePath</key>
-                                <string>Contents/MacOS/GenericUSBXHCI</string>
-                                <key>BundlePath</key>
-                                <string>GenericUSBXHCI.kext</string>
-                        </dict>
+				<key>Comment</key>
+				<string>USB XHCI</string>
+				<key>MatchKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/GenericUSBXHCI</string>
+				<key>BundlePath</key>
+				<string>GenericUSBXHCI.kext</string>
+			</dict>
 			<dict>
-                                <key>Comment</key>
-                                <string>VoodooI2C</string>
-                                <key>MatchKernel</key>
-                                <string></string>
-                                <key>PlistPath</key>
-                                <string>Contents/Info.plist</string>
-                                <key>Enabled</key>
-                                <true/>
-                                <key>ExecutablePath</key>
-                                <string>Contents/MacOS/VoodooI2C</string>
-                                <key>BundlePath</key>
-                                <string>VoodooI2C.kext</string>
-                        </dict>
+				<key>Comment</key>
+				<string>VoodooI2C</string>
+				<key>MatchKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoodooI2C</string>
+				<key>BundlePath</key>
+				<string>VoodooI2C.kext</string>
+			</dict>
 			<dict>
-                                <key>Comment</key>
-                                <string>VoodooI2CGPIO</string>
-                                <key>MatchKernel</key>
-                                <string></string>
-                                <key>PlistPath</key>
-                                <string>Contents/Info.plist</string>
-                                <key>Enabled</key>
-                                <true/>
-                                <key>ExecutablePath</key>
-                                <string>Contents/MacOS/VoodooI2CGPIO</string>
-                                <key>BundlePath</key>
-                                <string>VoodooI2C.kext/Contents/PlugIns/VoodooI2CGPIO.kext</string>
-                        </dict>
+				<key>Comment</key>
+				<string>VoodooGPIO</string>
+				<key>MatchKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoodooGPIO</string>
+				<key>BundlePath</key>
+				<string>VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext</string>
+			</dict>
 			<dict>
-                                <key>Comment</key>
-                                <string>VoodooI2CService</string>
-                                <key>MatchKernel</key>
-                                <string></string>
-                                <key>PlistPath</key>
-                                <string>Contents/Info.plist</string>
-                                <key>Enabled</key>
-                                <true/>
-                                <key>ExecutablePath</key>
-                                <string>Contents/MacOS/VoodooI2CServices</string>
-                                <key>BundlePath</key>
-                                <string>VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext</string>
-                        </dict>
+				<key>Comment</key>
+				<string>VoodooI2CService</string>
+				<key>MatchKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoodooI2CServices</string>
+				<key>BundlePath</key>
+				<string>VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext</string>
+			</dict>
 			<dict>
-                                <key>Comment</key>
-                                <string>VoodooI2CHID</string>
-                                <key>MatchKernel</key>
-                                <string></string>
-                                <key>PlistPath</key>
-                                <string>Contents/Info.plist</strin>
-                                <key>Enabled</key>
-                                <true/>
-                                <key>ExecutablePath</key>
-                                <string>Contents/MacOS/VoodooI2CHID</string>
-                                <key>BundlePath</key>
-                                <string>VoodooI2CHID.kext</string>
-                        </dict>
+				<key>Comment</key>
+				<string>VoodooI2CHID</string>
+				<key>MatchKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoodooI2CHID</string>
+				<key>BundlePath</key>
+				<string>VoodooI2CHID.kext</string>
+			</dict>
 		</array>
 		<key>Emulate</key>
 		<dict>
