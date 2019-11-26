@@ -13,8 +13,6 @@ My OpenCore EFI folder backup
 * Intel 600P
 * Thunderbolt
 
-# Still Experimental !
-
 ## Working
 10.13.6 ~ 10.14.x Boot  
 iGPU  
