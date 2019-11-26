@@ -337,6 +337,48 @@
 				<key>BundlePath</key>
 				<string>RealtekRTL8111.kext</string>
 			</dict>
+			<dict>
+                                <key>Comment</key>
+                                <string>BluetoothFixup</string>
+                                <key>MatchKernel</key>
+                                <string></string>
+                                <key>PlistPath</key>
+                                <string>Contents/Info.plist</strin>
+                                <key>Enabled</key>
+                                <true/>
+                                <key>ExecutablePath</key>
+                                <string>Contents/MacOS/BT4LEContinuityFixup>
+                                <key>BundlePath</key>
+                                <string>BT4LEContinuityFixup.kext</strin>
+                        </dict>
+			<dict>
+                                <key>Comment</key>
+                                <string>CPUfriend</string>
+                                <key>MatchKernel</key>
+                                <string></string>
+                                <key>PlistPath</key>
+                                <string>Contents/Info.plist</strin>
+                                <key>Enabled</key>
+                                <true/>
+                                <key>ExecutablePath</key>
+                                <string>Contents/MacOS/CPUFriend>
+                                <key>BundlePath</key>
+                                <string>CPUFriend.kext<>
+                        </dict>
+			<dict>
+                                <key>Comment</key>
+                                <string>TB3 Power</string>
+                                <key>MatchKernel</key>
+                                <string></string>
+                                <key>PlistPath</key>
+                                <string>Contents/Info.plist</strin>
+                                <key>Enabled</key>
+                                <true/>
+                                <key>ExecutablePath</key>
+                                <string>Contents/MacOS/IOElectrify>
+                                <key>BundlePath</key>
+                                <string>IOElectify.kext<>
+                        </dict>
 		</array>
 		<key>Emulate</key>
 		<dict>
