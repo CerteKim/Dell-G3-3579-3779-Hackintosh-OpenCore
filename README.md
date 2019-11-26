@@ -39,5 +39,5 @@ My OpenCore EFI folder backup
 # Plan
 * Buy a USB to HDMI adapter  
 * Buy a Dell TB16  
-*Test 10.15  
+* Test 10.15  
 * Test Nvidia WebDriver with 10.13.6
