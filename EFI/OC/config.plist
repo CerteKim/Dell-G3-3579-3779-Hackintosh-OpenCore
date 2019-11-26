@@ -627,20 +627,6 @@
 				<key>BundlePath</key>
 				<string>HibernationFixup.kext</string>
 			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SDHC</string>
-				<key>MatchKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VoodooSDHC</string>
-				<key>BundlePath</key>
-				<string>VoodooSDHC.kext</string>
-			</dict>
 		</array>
 		<key>Emulate</key>
 		<dict>

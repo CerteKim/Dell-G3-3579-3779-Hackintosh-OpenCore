@@ -1,37 +1,46 @@
 # Dell-G3-3579-Hackintosh-OpenCore
 My OpenCore EFI folder backup
 
-### Hardware Configuration
+**My Clover EFI here**
+[Dell-G3-3579-Hackintosh-Clover](https://github.com/CerteKim/Dell-G3-3579-Hackintosh-Clover)
+
+# Hardware Configuration
 * i7 8750H 
-* Iris UHD630 
+* UHD630 
 * GTX1060 max-q 
 * Intel Wireless AC9462 
 * ALC236 
 * Intel 600P
+* Thunderbolt
 
 # Still Experimental !
+
 ## Working
-10.13.6 Boot  
+10.13.6 ~ 10.14.x Boot  
 iGPU  
 Backlight  
-Audio  
-Keyboard
+Audio (layout=11)  
+Keyboard  
+Bluetooth  
+Trackpad with VoodooI2C
+
+## Maybe... working?
+USB to HDMI adapter  
+Thunderbolt (using SSDT & IOElectrify.kext, but I can't verify because I don't have TB3 devices)
 
 ## Issue
-Trackpad is recognize as mouse (Testing with VoodooI2C)  
-Can't recognize CPU model (Testing with added kext)
+Can't recognize CPU model (Testing with added kext)  
+No SerialNumber  
 
 ## Not working
 dGPU (Disabled by SSDT)  
-Wlan (Do not have driver)  
-Bluetooth (Testing with added kext)
+Wifi (Do not have driver)
 
 ## Unknown
-Webcam  
-Realtek Card reader  
-USB to HDMI adapter  
-Thunderbolt (Added IOElectrify but I can't test)
+Headphone Jack
 
 # Plan
 Buy a USB to HDMI adapter  
-Buy a Dell TB16
+Buy a Dell TB16  
+Test 10.15  
+Test Nvidia WebDriver with 10.13.6
