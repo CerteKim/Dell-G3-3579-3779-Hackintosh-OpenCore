@@ -18,16 +18,20 @@ Audio
 Keyboard
 
 ## Issue
-Trackpad is recognize as mouse  
-Can't recognize CPU model
+Trackpad is recognize as mouse (Testing with VoodooI2C)  
+Can't recognize CPU model (Testing with added kext)
 
 ## Not working
 dGPU (Disabled by SSDT)  
 Wlan (Do not have driver)  
-Bluetooth
+Bluetooth (Testing with added kext)
 
 ## Unknown
 Webcam  
 Realtek Card reader  
-USB type-c to HDMI adapter  
-Thunderbolt
+USB to HDMI adapter  
+Thunderbolt (Added IOElectrify but I can't test)
+
+# Plan
+Buy a USB to HDMI adapter  
+Buy a Dell TB16
