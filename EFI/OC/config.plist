@@ -343,13 +343,13 @@
                                 <key>MatchKernel</key>
                                 <string></string>
                                 <key>PlistPath</key>
-                                <string>Contents/Info.plist</strin>
+                                <string>Contents/Info.plist</string>
                                 <key>Enabled</key>
                                 <true/>
                                 <key>ExecutablePath</key>
-                                <string>Contents/MacOS/BT4LEContinuityFixup>
+                                <string>Contents/MacOS/BT4LEContinuityFixup</string>
                                 <key>BundlePath</key>
-                                <string>BT4LEContinuityFixup.kext</strin>
+                                <string>BT4LEContinuityFixup.kext</string>
                         </dict>
 			<dict>
                                 <key>Comment</key>
@@ -357,13 +357,13 @@
                                 <key>MatchKernel</key>
                                 <string></string>
                                 <key>PlistPath</key>
-                                <string>Contents/Info.plist</strin>
+                                <string>Contents/Info.plist</string>
                                 <key>Enabled</key>
                                 <true/>
                                 <key>ExecutablePath</key>
-                                <string>Contents/MacOS/CPUFriend>
+                                <string>Contents/MacOS/CPUFriend</string>
                                 <key>BundlePath</key>
-                                <string>CPUFriend.kext<>
+                                <string>CPUFriend.kext</string>
                         </dict>
 			<dict>
                                 <key>Comment</key>
@@ -371,13 +371,27 @@
                                 <key>MatchKernel</key>
                                 <string></string>
                                 <key>PlistPath</key>
-                                <string>Contents/Info.plist</strin>
+                                <string>Contents/Info.plist</string>
                                 <key>Enabled</key>
                                 <true/>
                                 <key>ExecutablePath</key>
-                                <string>Contents/MacOS/IOElectrify>
+                                <string>Contents/MacOS/IOElectrify</string>
                                 <key>BundlePath</key>
-                                <string>IOElectify.kext<>
+                                <string>IOElectify.kext</string>
+                        </dict>
+			<dict>
+                                <key>Comment</key>
+                                <string>USB XHCI</string>
+                                <key>MatchKernel</key>
+                                <string></string>
+                                <key>PlistPath</key>
+                                <string>Contents/Info.plist</string>
+                                <key>Enabled</key>
+                                <true/>
+                                <key>ExecutablePath</key>
+                                <string>Contents/MacOS/GenericUSBXHCI</string>
+                                <key>BundlePath</key>
+                                <string>GenericUSBXHCI.kext</string>
                         </dict>
 		</array>
 		<key>Emulate</key>
