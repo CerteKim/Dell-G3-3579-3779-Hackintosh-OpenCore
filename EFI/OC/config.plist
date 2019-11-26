@@ -23,6 +23,22 @@
 				<true/>
 			</dict>
 			<dict>
+                                <key>Comment</key>
+                                <string>TB3</string>
+                                <key>Path</key>
+                                <string>SSDT-TB3.aml</string>
+                                <key>Enabled</key>
+                                <true/>
+                        </dict>
+			<dict>
+                                <key>Comment</key>
+                                <string>XOSI</string>
+                                <key>Path</key>
+                                <string>SSDT-XOSI.aml</string>
+                                <key>Enabled</key>
+                                <true/>
+                        </dict>
+			<dict>
 				<key>Comment</key>
 				<string>Backlight</string>
 				<key>Path</key>
@@ -392,6 +408,62 @@
                                 <string>Contents/MacOS/GenericUSBXHCI</string>
                                 <key>BundlePath</key>
                                 <string>GenericUSBXHCI.kext</string>
+                        </dict>
+			<dict>
+                                <key>Comment</key>
+                                <string>VoodooI2C</string>
+                                <key>MatchKernel</key>
+                                <string></string>
+                                <key>PlistPath</key>
+                                <string>Contents/Info.plist</string>
+                                <key>Enabled</key>
+                                <true/>
+                                <key>ExecutablePath</key>
+                                <string>Contents/MacOS/VoodooI2C</string>
+                                <key>BundlePath</key>
+                                <string>VoodooI2C.kext</string>
+                        </dict>
+			<dict>
+                                <key>Comment</key>
+                                <string>VoodooI2CGPIO</string>
+                                <key>MatchKernel</key>
+                                <string></string>
+                                <key>PlistPath</key>
+                                <string>Contents/Info.plist</string>
+                                <key>Enabled</key>
+                                <true/>
+                                <key>ExecutablePath</key>
+                                <string>Contents/MacOS/VoodooI2CGPIO</string>
+                                <key>BundlePath</key>
+                                <string>VoodooI2C.kext/Contents/PlugIns/VoodooI2CGPIO.kext</string>
+                        </dict>
+			<dict>
+                                <key>Comment</key>
+                                <string>VoodooI2CService</string>
+                                <key>MatchKernel</key>
+                                <string></string>
+                                <key>PlistPath</key>
+                                <string>Contents/Info.plist</string>
+                                <key>Enabled</key>
+                                <true/>
+                                <key>ExecutablePath</key>
+                                <string>Contents/MacOS/VoodooI2CServices</string>
+                                <key>BundlePath</key>
+                                <string>VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext</string>
+                        </dict>
+			<dict>
+                                <key>Comment</key>
+                                <string>VoodooI2CHID</string>
+                                <key>MatchKernel</key>
+                                <string></string>
+                                <key>PlistPath</key>
+                                <string>Contents/Info.plist</strin>
+                                <key>Enabled</key>
+                                <true/>
+                                <key>ExecutablePath</key>
+                                <string>Contents/MacOS/VoodooI2CHID</string>
+                                <key>BundlePath</key>
+                                <string>VoodooI2CHID.kext</string>
                         </dict>
 		</array>
 		<key>Emulate</key>
