@@ -14,30 +14,24 @@ My OpenCore EFI folder backup
 * Thunderbolt
 
 ## Working
-* 10.13.6 ~ 10.14.x Boot  
+* 10.13.6 ~ 10.15.1 Boot  
 * iGPU  
 * Backlight  
-* Audio (layout=11)  
-* Bluetooth  
+* Audio (layout=15)  
 * Trackpad with VoodooI2C
+* Bluetooth
 
 ## Maybe... working?
 * USB to HDMI adapter  
-* Thunderbolt (using SSDT & IOElectrify.kext, but I can't verify because I don't have TB3 devices)
-
-## Issue
-* Can't recognize CPU model  
-* No SerialNumber  
 
 ## Not working
 * dGPU (Disabled by SSDT)  
-* Wifi (Do not have driver)
+* Wifi (Do not have driver)  
+* Thunderbolt (Still working on fixing SSDT)
 
 ## Unknown
 * Headphone Jack
 
 # Plan
 * Buy a USB to HDMI adapter  
-* Buy a Dell TB16  
-* Test 10.15  
-* Test Nvidia WebDriver with 10.13.6
+* Buy a Dell TB16

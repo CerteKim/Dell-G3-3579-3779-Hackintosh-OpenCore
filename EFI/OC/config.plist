@@ -16,17 +16,9 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>TB3</string>
-				<key>Path</key>
-				<string>SSDT-TB3.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>XOSI</string>
 				<key>Path</key>
-				<string>SSDT-XOSI.aml</string>
+				<string>SSDT-OC-XOSI.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
@@ -48,9 +40,9 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>EC &amp; USBX</string>
+				<string>USBX</string>
 				<key>Path</key>
-				<string>SSDT-EC-USBX.aml</string>
+				<string>SSDT-USBX.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
@@ -66,7 +58,63 @@
 				<key>Comment</key>
 				<string>Backlight key</string>
 				<key>Path</key>
-				<string>SSDT-BKeyBRT6-dell.aml</string>
+				<string>SSDT-BRT6.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>PTSWAK</string>
+				<key>Path</key>
+				<string>SSDT-PTSWAK.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ALS0</string>
+				<key>Path</key>
+				<string>SSDT-ALS0.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>EXT4-WakeScreen</string>
+				<key>Path</key>
+				<string>SSDT-EXT4-WakeScreen.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>LIDpatch</string>
+				<key>Path</key>
+				<string>SSDT-LIDpatch.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SBUS</string>
+				<key>Path</key>
+				<string>SSDT-SBUS.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-Config</string>
+				<key>Path</key>
+				<string>SSDT-Config.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Deepidle</string>
+				<key>Path</key>
+				<string>SSDT-DeepIdle.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
@@ -128,6 +176,162 @@
 				<key>Find</key>
 				<data>QlJUNgKgC5M=</data>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>OSID to XSID</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>AAAAAA==</data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Mask</key>
+				<data></data>
+				<key>Enabled</key>
+				<true/>
+				<key>Replace</key>
+				<data>WFNJRA==</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Find</key>
+				<data>T1NJRA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>_OSI to XOSI</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>AAAAAA==</data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Mask</key>
+				<data></data>
+				<key>Enabled</key>
+				<true/>
+				<key>Replace</key>
+				<data>WE9TSQ==</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Find</key>
+				<data>X09TSQ==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>_PTS to ZPTS(1,N)</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>AAAAAA==</data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Mask</key>
+				<data></data>
+				<key>Enabled</key>
+				<true/>
+				<key>Replace</key>
+				<data>WlBUUwE=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Find</key>
+				<data>X1BUUwE=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>_WAK to ZWAK(1,N)</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>AAAAAA==</data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Mask</key>
+				<data></data>
+				<key>Enabled</key>
+				<true/>
+				<key>Replace</key>
+				<data>WldBSwE=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Find</key>
+				<data>X1dBSwE=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>_LID to XLID</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>AAAAAA==</data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Mask</key>
+				<data></data>
+				<key>Enabled</key>
+				<true/>
+				<key>Replace</key>
+				<data>WExJRAA=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Find</key>
+				<data>X0xJRAA=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ECDV to EC</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Mask</key>
+				<data></data>
+				<key>Enabled</key>
+				<true/>
+				<key>Replace</key>
+				<data>RUNfXw==</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Find</key>
+				<data>RUNEVg==</data>
+			</dict>
 		</array>
 		<key>Quirks</key>
 		<dict>
@@ -179,22 +383,27 @@
 	<key>DeviceProperties</key>
 	<dict>
 		<key>Add</key>
-		<dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,31,3</string>
+				<key>device_type</key>
+				<string>Audio device</string>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
 				<key>layout-id</key>
-				<integer>11</integer>
-			</dict>
+				<data>DwAAAA==</data>
+				<key>model</key>
+				<string>Cannon Lake PCH cAVS</string>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>AACbPg==
-</data>
+				<data>AACbPg==</data>
 				<key>device-id</key>
 				<data>mz4AAA==</data>
-				<key>disable-external-gpu</key>
-				<data>AQAAAA==</data>
 				<key>enable-hdmi20</key>
+				<data>AQAAAA==</data>
+				<key>disable-external-gpu</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-enable</key>
 				<data>AQAAAA==</data>
@@ -627,6 +836,48 @@
 				<key>BundlePath</key>
 				<string>HibernationFixup.kext</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SDHC</string>
+				<key>MatchKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoodooSDHC</string>
+				<key>BundlePath</key>
+				<string>VoodooSDHC.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>AirportBrcmFixup</string>
+				<key>MatchKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AirportBrcmFixup</string>
+				<key>BundlePath</key>
+				<string>AirportBrcmFixup.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>AUO42ED</string>
+				<key>MatchKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>BundlePath</key>
+				<string>AUO42ED.kext</string>
+			</dict>
 		</array>
 		<key>Emulate</key>
 		<dict>
@@ -764,11 +1015,11 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>Slide=1 -v igfxcflbklt=1 darkwake=8</string>
+				<string>Slide=1 -v darkwake=8</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
 				<key>nvda_drv</key>
-				<data></data>
+				<data>MQ==</data>
 				<key>prev-lang:kbd</key>
 				<data>emgtSGFuczoyNTI=</data>
 			</dict>
