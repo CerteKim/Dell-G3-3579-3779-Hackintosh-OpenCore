@@ -24,6 +24,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Backlight</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-PNLF_CoffeeLake.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>PowerManager</string>
 				<key>Enabled</key>
 				<true/>
@@ -48,6 +56,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Backlight key</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-BRT6.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>PTSWAK</string>
 				<key>Enabled</key>
 				<true/>
@@ -61,6 +77,14 @@
 				<true/>
 				<key>Path</key>
 				<string>SSDT-ALS0.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>EXT4-WakeScreen</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-EXT4-WakeScreen.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -88,35 +112,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>RMCF</string>
+				<string>Deepidle</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-RMCF.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Backlight</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-PNLF-CFL.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>IGPU</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-IGPU.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>BKey</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-BKeySMEE-Dell.aml</string>
+				<string>SSDT-DeepIdle.aml</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -159,6 +159,41 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>BRT6 to XRT6(dell)</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				QlJUNgKgC5M=
+				</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>
+				</data>
+				<key>OemTableId</key>
+				<data>
+				</data>
+				<key>Replace</key>
+				<data>
+				WFJUNgKgC5M=
+				</data>
+				<key>ReplaceMask</key>
+				<data>
+				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>
+				AAAAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>OSID to XSID</string>
 				<key>Count</key>
 				<integer>0</integer>
@@ -189,6 +224,7 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
+				AAAAAA==
 				</data>
 			</dict>
 			<dict>
@@ -223,40 +259,7 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>_DSM to XDSM</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				X0RTTQ==
-				</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data>
-				</data>
-				<key>OemTableId</key>
-				<data>
-				</data>
-				<key>Replace</key>
-				<data>
-				WERTTQ==
-				</data>
-				<key>ReplaceMask</key>
-				<data>
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>
+				AAAAAA==
 				</data>
 			</dict>
 			<dict>
@@ -291,6 +294,7 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
+				AAAAAA==
 				</data>
 			</dict>
 			<dict>
@@ -325,6 +329,7 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
+				AAAAAA==
 				</data>
 			</dict>
 			<dict>
@@ -359,6 +364,7 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
+				AAAAAA==
 				</data>
 			</dict>
 			<dict>
@@ -397,70 +403,18 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>HDAS to HDEF</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				SERBUw==
-				</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data>
-				</data>
-				<key>OemTableId</key>
-				<data>
-				</data>
-				<key>Replace</key>
-				<data>
-				SERFRg==
-				</data>
-				<key>ReplaceMask</key>
-				<data>
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>HECI to IMEI</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
+				<string>Rename HECI to IMEI (PAVP)</string>
 				<key>Find</key>
 				<data>
 				SEVDSQ==
-				</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data>
-				</data>
-				<key>OemTableId</key>
-				<data>
 				</data>
 				<key>Replace</key>
 				<data>
 				SU1FSQ==
 				</data>
-				<key>ReplaceMask</key>
-				<data>
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>
+				RFNEVA==
 				</data>
 			</dict>
 			<dict>
@@ -502,7 +456,7 @@
 				<string>PEGP to GFX0</string>
 				<key>Count</key>
 				<integer>1</integer>
-				<key>Disable</key>
+				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
@@ -519,40 +473,6 @@
 				<key>Replace</key>
 				<data>
 				R0ZYMA==
-				</data>
-				<key>ReplaceMask</key>
-				<data>
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SMEE to XMEE</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Disable</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				U01FRQE=
-				</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data>
-				</data>
-				<key>OemTableId</key>
-				<data>
-				</data>
-				<key>Replace</key>
-				<data>
-				WE1FRQE=
 				</data>
 				<key>ReplaceMask</key>
 				<data>
@@ -776,8 +696,6 @@
 				<data>
 				DwAAAA==
 				</data>
-				<key>no-controller-patch</key>
-				<number>1</number>
 				<key>model</key>
 				<string>Cannon Lake PCH cAVS</string>
 			</dict>
@@ -1344,6 +1262,100 @@
 		</dict>
 		<key>Patch</key>
 		<array>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>Comment</key>
+				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				SU9LaXQ=
+				</data>
+				<key>Identifier</key>
+				<string>com.apple.driver.AppleIntelLpssI2C</string>
+				<key>InfoPlistPatch</key>
+				<true/>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>
+				</data>
+				<key>Replace</key>
+				<data>
+				SU9LaXM=
+				</data>
+				<key>ReplaceMask</key>
+				<data>
+				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>Comment</key>
+				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				SU9LaXQ=
+				</data>
+				<key>Identifier</key>
+				<string>com.apple.driver.AppleIntelLpssI2CController</string>
+				<key>InfoPlistPatch</key>
+				<true/>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>
+				</data>
+				<key>Replace</key>
+				<data>
+				SU9LaXM=
+				</data>
+				<key>ReplaceMask</key>
+				<data>
+				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>Comment</key>
+				<string>Enable TRIM for SSD</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				AEFQUExFIFNTRAA=
+				</data>
+				<key>Identifier</key>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>
+				</data>
+				<key>Replace</key>
+				<data>
+				AAAAAAAAAAAAAAA=
+				</data>
+				<key>ReplaceMask</key>
+				<data>
+				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
 			<dict>
 				<key>Base</key>
 				<string></string>
