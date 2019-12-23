@@ -8,7 +8,7 @@ My OpenCore EFI folder backup
 * i7 8750H 
 * UHD630 
 * GTX1060 max-q 
-* Intel Wireless AC9462 
+* ~~Intel Wireless AC9462~~  Replace with DW1820A
 * ALC236 
 * Intel 600P
 * Thunderbolt
@@ -21,17 +21,15 @@ My OpenCore EFI folder backup
 * Trackpad with VoodooI2C
 * Bluetooth
 
-## Maybe... working?
-* USB to HDMI adapter  
+## Issue
+Intel 600P cause kernel panic randomly.
 
 ## Not working
 * dGPU (Disabled by SSDT)  
-* Wifi (Do not have driver)  
 * Thunderbolt (Still working on fixing SSDT)
 
 ## Unknown
 * Headphone Jack
 
 # Plan
-* Buy a USB to HDMI adapter  
 * Buy a Dell TB16
