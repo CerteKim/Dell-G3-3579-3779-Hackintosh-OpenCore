@@ -18,8 +18,9 @@ My OpenCore EFI folder backup
 * iGPU  
 * Backlight  
 * Audio (layout=15)  
+* USB Type-c HDMI
 * Trackpad with VoodooI2C  
-* Bluetooth  
+* WebCam
 
 ## Issue
 Intel 600P cause kernel panic randomly, because IONVMeFamily.kext doesn't natively support my drive.
