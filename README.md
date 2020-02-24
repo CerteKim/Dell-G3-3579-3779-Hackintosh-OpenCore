@@ -18,7 +18,7 @@ My OpenCore EFI folder backup
 * iGPU  
 * Backlight  
 * Audio (layout=15)  
-* Trackpad with VoodooI2C (Testing)  
+* Trackpad with VoodooI2C  
 * Bluetooth  
 
 ## Issue
