@@ -4,6 +4,12 @@ My OpenCore EFI folder backup
 **My Clover EFI here**
 [Dell-G3-3579-Hackintosh-Clover](https://github.com/CerteKim/Dell-G3-3579-Hackintosh-Clover)
 
+# setup_var by using my grubx64.efi
+```
+setup_var 0x5BC 0x0 //Disable CFG Lock
+setup_var 0x8C9 0x2 //Set DVMT Pre-Allocated to 64M
+```
+
 # Hardware Configuration
 * i7 8750H 
 * UHD630 
