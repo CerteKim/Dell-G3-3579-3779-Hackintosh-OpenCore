@@ -84,7 +84,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-PNLF_CoffeeLake.aml</string>
+				<string>SSDT-PNLF-CFL.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -593,6 +593,8 @@
 				<key>disable-external-gpu</key>
 				<data>AQAAAA==</data>
 				<key>enable-hdmi-dividers-fix</key>
+				<data>AQAAAA==</data>
+				<key>enable-cfl-backlight-fix</key>
 				<data>AQAAAA==</data>
 				<key>enable-hdmi20</key>
 				<data>AQAAAA==</data>
@@ -1350,15 +1352,13 @@
 			<string>3FFF1FFF 00000000</string>
 			<key>MLB</key>
 			<string>C02807701QXJP4FJC</string>
-			<key>ROM</key>
-			<data>gNtgkKdI</data>
 		</dict>
 		<key>SMBIOS</key>
 		<dict>
 			<key>BIOSReleaseDate</key>
-			<string>09/17/2019</string>
+			<string>01/05/2020</string>
 			<key>BIOSVendor</key>
-			<string></string>
+			<string>Apple Inc.</string>
 			<key>BIOSVersion</key>
 			<string>1037.0.78.0.0</string>
 			<key>BoardAssetTag</key>
@@ -1366,7 +1366,7 @@
 			<key>BoardLocationInChassis</key>
 			<string>Part Component</string>
 			<key>BoardManufacturer</key>
-			<string></string>
+			<string>Apple Inc.</string>
 			<key>BoardProduct</key>
 			<string>Mac-937A206F2EE63C01</string>
 			<key>BoardSerialNumber</key>
@@ -1378,7 +1378,7 @@
 			<key>ChassisAssetTag</key>
 			<string>MacBook-Aluminum</string>
 			<key>ChassisManufacturer</key>
-			<string></string>
+			<string>Apple Inc.</string>
 			<key>ChassisSerialNumber</key>
 			<string>C02W80H5KGYG</string>
 			<key>ChassisType</key>
