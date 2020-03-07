@@ -10,6 +10,14 @@ setup_var 0x5BC 0x0 //Disable CFG Lock
 setup_var 0x8C9 0x2 //Set DVMT Pre-Allocated to 64M
 ```
 
+# Enable OpenCore boot menu
+Find 
+```
+<key>ShowPicker</key>
+<false/>
+``` 
+change the value to ```true```
+
 # Hardware Configuration
 * i7 8750H 
 * UHD630 
