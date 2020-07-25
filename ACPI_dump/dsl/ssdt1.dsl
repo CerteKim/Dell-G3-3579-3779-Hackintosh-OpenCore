@@ -1,11 +1,11 @@
 /*
  * Intel ACPI Component Architecture
- * AML/ASL+ Disassembler version 20200214 (64-bit version)
+ * AML/ASL+ Disassembler version 20200717 (64-bit version)
  * Copyright (c) 2000 - 2020 Intel Corporation
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of ssdt1.dat, Tue Feb 25 03:30:33 2020
+ * Disassembly of ssdt1.dat, Sat Jul 25 01:11:12 2020
  *
  * Original Table Header:
  *     Signature        "SSDT"
@@ -21,8 +21,13 @@
 DefinitionBlock ("", "SSDT", 2, "PegSsd", "PegSsdt", 0x00001000)
 {
     External (_SB_.CAGS, MethodObj)    // 1 Arguments
+    External (_SB_.CFGD, IntObj)
     External (_SB_.GGOV, MethodObj)    // 1 Arguments
+    External (_SB_.HWPV, IntObj)
     External (_SB_.ISME, MethodObj)    // 1 Arguments
+    External (_SB_.ITBM, IntObj)
+    External (_SB_.LMPS, IntObj)
+    External (_SB_.OSCP, IntObj)
     External (_SB_.PCI0, DeviceObj)
     External (_SB_.PCI0.PEG0, DeviceObj)
     External (_SB_.PCI0.PEG0.CEDR, IntObj)
@@ -38,6 +43,9 @@ DefinitionBlock ("", "SSDT", 2, "PegSsd", "PegSsdt", 0x00001000)
     External (_SB_.PCI0.PEG2.PEGP, DeviceObj)
     External (_SB_.PCI0.PEG2.PINI, MethodObj)    // 0 Arguments
     External (_SB_.PCI0.PEG2.PPBA, MethodObj)    // 1 Arguments
+    External (_SB_.PR00, DeviceObj)
+    External (_SB_.PR00.CPC2, PkgObj)
+    External (_SB_.PR00.CPOC, PkgObj)
     External (_SB_.SGOV, MethodObj)    // 2 Arguments
     External (_SB_.SHPO, MethodObj)    // 2 Arguments
     External (AR02, UnknownObj)
@@ -100,6 +108,7 @@ DefinitionBlock ("", "SSDT", 2, "PegSsd", "PegSsdt", 0x00001000)
     External (SGMD, UnknownObj)
     External (SMSL, UnknownObj)
     External (SNSL, UnknownObj)
+    External (TCNT, FieldUnitObj)
     External (XBAS, UnknownObj)
 
     Scope (\_GPE)

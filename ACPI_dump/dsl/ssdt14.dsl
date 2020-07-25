@@ -1,160 +1,57 @@
 /*
  * Intel ACPI Component Architecture
- * AML/ASL+ Disassembler version 20200214 (64-bit version)
+ * AML/ASL+ Disassembler version 20200717 (64-bit version)
  * Copyright (c) 2000 - 2020 Intel Corporation
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of ssdt14.dat, Tue Feb 25 03:30:33 2020
+ * Disassembly of ssdt14.dat, Sat Jul 25 01:11:12 2020
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x00000317 (791)
+ *     Length           0x0000011B (283)
  *     Revision         0x02
- *     Checksum         0xE3
+ *     Checksum         0x61
  *     OEM ID           "PmRef"
- *     OEM Table ID     "ApHwp"
+ *     OEM Table ID     "Cpu0Hwp"
  *     OEM Revision     0x00003000 (12288)
  *     Compiler ID      "INTL"
  *     Compiler Version 0x20160527 (538314023)
  */
-DefinitionBlock ("", "SSDT", 2, "PmRef", "ApHwp", 0x00003000)
+DefinitionBlock ("", "SSDT", 2, "PmRef", "Cpu0Hwp", 0x00003000)
 {
-    External (_SB_.PR00, ProcessorObj)
-    External (_SB_.PR00._CPC, MethodObj)    // 0 Arguments
-    External (_SB_.PR01, ProcessorObj)
-    External (_SB_.PR02, ProcessorObj)
-    External (_SB_.PR03, ProcessorObj)
-    External (_SB_.PR04, ProcessorObj)
-    External (_SB_.PR05, ProcessorObj)
-    External (_SB_.PR06, ProcessorObj)
-    External (_SB_.PR07, ProcessorObj)
-    External (_SB_.PR08, ProcessorObj)
-    External (_SB_.PR09, ProcessorObj)
-    External (_SB_.PR10, ProcessorObj)
-    External (_SB_.PR11, ProcessorObj)
-    External (_SB_.PR12, ProcessorObj)
-    External (_SB_.PR13, ProcessorObj)
-    External (_SB_.PR14, ProcessorObj)
-    External (_SB_.PR15, ProcessorObj)
+    External (_SB_.CFGD, IntObj)
+    External (_SB_.HWPV, IntObj)
+    External (_SB_.ITBM, IntObj)
+    External (_SB_.LMPS, IntObj)
+    External (_SB_.OSCP, IntObj)
+    External (_SB_.PR00, DeviceObj)
+    External (_SB_.PR00.CPC2, PkgObj)
+    External (_SB_.PR00.CPOC, PkgObj)
+    External (CPC2, IntObj)
+    External (CPOC, IntObj)
+    External (TCNT, FieldUnitObj)
 
-    Scope (\_SB.PR01)
+    Scope (\_SB.PR00)
     {
         Method (_CPC, 0, NotSerialized)  // _CPC: Continuous Performance Control
         {
-            Return (\_SB.PR00._CPC ())
-        }
-    }
+            If ((\_SB.CFGD & 0x01000000))
+            {
+                Return (CPOC) /* External reference */
+            }
+            Else
+            {
+                If (((\_SB.CFGD & 0x02000000) && (\_SB.ITBM == Zero)))
+                {
+                    If ((\_SB.LMPS != Zero))
+                    {
+                        DerefOf (CPC2 [0x02]) = \_SB.LMPS /* External reference */
+                    }
+                }
 
-    Scope (\_SB.PR02)
-    {
-        Method (_CPC, 0, NotSerialized)  // _CPC: Continuous Performance Control
-        {
-            Return (\_SB.PR00._CPC ())
-        }
-    }
-
-    Scope (\_SB.PR03)
-    {
-        Method (_CPC, 0, NotSerialized)  // _CPC: Continuous Performance Control
-        {
-            Return (\_SB.PR00._CPC ())
-        }
-    }
-
-    Scope (\_SB.PR04)
-    {
-        Method (_CPC, 0, NotSerialized)  // _CPC: Continuous Performance Control
-        {
-            Return (\_SB.PR00._CPC ())
-        }
-    }
-
-    Scope (\_SB.PR05)
-    {
-        Method (_CPC, 0, NotSerialized)  // _CPC: Continuous Performance Control
-        {
-            Return (\_SB.PR00._CPC ())
-        }
-    }
-
-    Scope (\_SB.PR06)
-    {
-        Method (_CPC, 0, NotSerialized)  // _CPC: Continuous Performance Control
-        {
-            Return (\_SB.PR00._CPC ())
-        }
-    }
-
-    Scope (\_SB.PR07)
-    {
-        Method (_CPC, 0, NotSerialized)  // _CPC: Continuous Performance Control
-        {
-            Return (\_SB.PR00._CPC ())
-        }
-    }
-
-    Scope (\_SB.PR08)
-    {
-        Method (_CPC, 0, NotSerialized)  // _CPC: Continuous Performance Control
-        {
-            Return (\_SB.PR00._CPC ())
-        }
-    }
-
-    Scope (\_SB.PR09)
-    {
-        Method (_CPC, 0, NotSerialized)  // _CPC: Continuous Performance Control
-        {
-            Return (\_SB.PR00._CPC ())
-        }
-    }
-
-    Scope (\_SB.PR10)
-    {
-        Method (_CPC, 0, NotSerialized)  // _CPC: Continuous Performance Control
-        {
-            Return (\_SB.PR00._CPC ())
-        }
-    }
-
-    Scope (\_SB.PR11)
-    {
-        Method (_CPC, 0, NotSerialized)  // _CPC: Continuous Performance Control
-        {
-            Return (\_SB.PR00._CPC ())
-        }
-    }
-
-    Scope (\_SB.PR12)
-    {
-        Method (_CPC, 0, NotSerialized)  // _CPC: Continuous Performance Control
-        {
-            Return (\_SB.PR00._CPC ())
-        }
-    }
-
-    Scope (\_SB.PR13)
-    {
-        Method (_CPC, 0, NotSerialized)  // _CPC: Continuous Performance Control
-        {
-            Return (\_SB.PR00._CPC ())
-        }
-    }
-
-    Scope (\_SB.PR14)
-    {
-        Method (_CPC, 0, NotSerialized)  // _CPC: Continuous Performance Control
-        {
-            Return (\_SB.PR00._CPC ())
-        }
-    }
-
-    Scope (\_SB.PR15)
-    {
-        Method (_CPC, 0, NotSerialized)  // _CPC: Continuous Performance Control
-        {
-            Return (\_SB.PR00._CPC ())
+                Return (CPC2) /* External reference */
+            }
         }
     }
 }

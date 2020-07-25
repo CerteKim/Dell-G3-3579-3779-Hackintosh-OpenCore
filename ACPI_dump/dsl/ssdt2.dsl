@@ -1,17 +1,17 @@
 /*
  * Intel ACPI Component Architecture
- * AML/ASL+ Disassembler version 20200214 (64-bit version)
+ * AML/ASL+ Disassembler version 20200717 (64-bit version)
  * Copyright (c) 2000 - 2020 Intel Corporation
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of ssdt2.dat, Tue Feb 25 03:30:33 2020
+ * Disassembly of ssdt2.dat, Sat Jul 25 01:11:12 2020
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x000017D5 (6101)
+ *     Length           0x00001818 (6168)
  *     Revision         0x02
- *     Checksum         0xF7
+ *     Checksum         0x11
  *     OEM ID           "CpuRef"
  *     OEM Table ID     "CpuSsdt"
  *     OEM Revision     0x00003000 (12288)
@@ -44,22 +44,22 @@ DefinitionBlock ("", "SSDT", 2, "CpuRef", "CpuSsdt", 0x00003000)
         Name (SSDT, Package (0x15)
         {
             "CPU0IST ", 
-            0x770EC298, 
-            0x000005BE, 
+            0x734E8018, 
+            0x000008D6, 
             "APIST   ", 
             0x770DA018, 
             0x00000EF1, 
             "CPU0CST ", 
-            0x770D9018, 
+            0x770EC418, 
             0x00000400, 
             "APCST   ", 
             0x770DBA98, 
             0x0000030A, 
             "CPU0HWP ", 
-            0x770EC918, 
+            0x770EC298, 
             0x0000011B, 
             "APHWP   ", 
-            0x770D9698, 
+            0x770D9018, 
             0x00000317, 
             "HWPLVT  ", 
             0x770DB018, 
@@ -87,7 +87,7 @@ DefinitionBlock ("", "SSDT", 2, "CpuRef", "CpuSsdt", 0x00003000)
     Scope (\_SB)
     {
         Name (CTPC, Zero)
-        OperationRegion (PNVS, SystemMemory, 0x612C1000, 0x0070)
+        OperationRegion (PNVS, SystemMemory, 0x612C0000, 0x0072)
         Field (PNVS, AnyAcc, Lock, Preserve)
         {
             PGRV,   8, 
@@ -157,6 +157,8 @@ DefinitionBlock ("", "SSDT", 2, "CpuRef", "CpuSsdt", 0x00003000)
             ITBI,   8, 
             ITBS,   8, 
             OBIN,   8, 
+            HWPE,   8, 
+            TXTE,   8, 
             C3MW,   8, 
             C3LT,   16
         }
@@ -1124,6 +1126,18 @@ DefinitionBlock ("", "SSDT", 2, "CpuRef", "CpuSsdt", 0x00003000)
 
             PC00 = PC15 /* \PC15 */
             Return (Zero)
+        }
+    }
+
+    Scope (\_SB)
+    {
+        If ((TXTE == One))
+        {
+            Device (ACM)
+            {
+                Name (_HID, "INTC1025")  // _HID: Hardware ID
+                Name (_CID, "INT_WHL_SINIT")  // _CID: Compatible ID
+            }
         }
     }
 }

@@ -1,11 +1,11 @@
 /*
  * Intel ACPI Component Architecture
- * AML/ASL+ Disassembler version 20200214 (64-bit version)
+ * AML/ASL+ Disassembler version 20200717 (64-bit version)
  * Copyright (c) 2000 - 2020 Intel Corporation
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of ssdt18.dat, Tue Feb 25 03:30:33 2020
+ * Disassembly of ssdt18.dat, Sat Jul 25 01:11:12 2020
  *
  * Original Table Header:
  *     Signature        "SSDT"
